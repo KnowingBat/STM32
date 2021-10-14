@@ -13,9 +13,9 @@ int main(void){
 
 	uart2_init();
 	adc_init();
-
+	//to add continuous conversion put start_conversion() out of the while
+	start_conversion();
 	while(1){
-		start_conversion();
 		value = read_conversion();
 		result = ((float)value/4096) * 3.3;
 		printf("Sensor value: %.2f\n", result);

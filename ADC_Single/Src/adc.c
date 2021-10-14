@@ -8,6 +8,7 @@
 #define ADON 		(1U<<0)
 #define SWSTART 	(1U<<30)
 #define EOC			(1U<<1)
+#define CONT		(1U<<1)
 
 void adc_init(){
 	//Enable APB2 clock access
@@ -25,6 +26,7 @@ void adc_init(){
 }
 
 void start_conversion(){
+	ADC1_>CR2 |= CONT;
 	//STart the ADC conversion
 	ADC1->CR2 |= SWSTART;
 }
