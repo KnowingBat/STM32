@@ -1,0 +1,2 @@
+timer.c:13:6:tim2_1hz_init	4	static
+timer.c:26:6:tim2_output_compare	4	static
