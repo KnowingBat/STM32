@@ -1,0 +1,4 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+adc.c:14:6:adc_init	8	static,ignoring_inline_asm
+adc.c:37:6:start_conversion	4	static
+adc.c:43:10:read_conversion	4	static

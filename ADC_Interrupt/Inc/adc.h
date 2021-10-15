@@ -1,0 +1,12 @@
+#ifndef ADC_H_
+#define ADC_H_
+
+#include <stdint.h>
+
+void adc_init(void);
+void start_conversion(void);
+uint32_t read_conversion(void);
+
+#define EOC			(1U<<1)
+
+#endif /* ADC_H_ */
